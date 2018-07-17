@@ -1,3 +1,4 @@
+import sys
 
 drug_name = 'drug_name'
 num_prescriber = 'num_prescriber'
@@ -5,7 +6,7 @@ total_cost = 'total_cost'
 drug_cost = 'drug_cost'
 
 def main():
-    input_path = './input/itcont.txt'
+    input_path = sys.argv[1]
     input_file = open(input_path)
     keys = [input_file.readline().strip()][0].strip().split(',')
     mapped_data_list =[]
@@ -53,7 +54,7 @@ def find_in_sublist(lst, item, key):
   
 #Write data into output file
 def write_output(lst):
-    output_path = './output/top_cost_drug.txt'
+    output_path = sys.argv[2]
     output_file = open(output_path,'w')
     header = drug_name + ',' + num_prescriber + ',' + total_cost + '\n'
     output_file.write(header)
