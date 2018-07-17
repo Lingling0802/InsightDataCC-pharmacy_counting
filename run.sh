@@ -5,6 +5,8 @@
 
 #python3 ./src/pharmacy-counting.py ./own-test/input/own-input-for-itcont.txt ./own-test/output/top_cost_drug.txt
 
-python3 ./src/pharmacy-counting.py ./input/itcont.txt ./output/top_cost_drug.txt
+#python3 ./src/pharmacy-counting.py ./input/itcont.txt ./output/top_cost_drug.txt
+
+python3 ./src/pharmacy-counting.py
 
 
